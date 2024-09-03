@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #04D939;
+    --cor2: #03A63C;
+    --cor3: #027333;
+    --cor4: #025959;
+    --cor5: #012340;
+    --cor6: #000000;
+
+    --fonte0: Arial, Verdana, Helvetica, sans-serif;
+    --fonte1: Verdana, Tahoma, sans-serif; 
+    --fonte_passion: "Passion One", sans-serif;
+    --fonte-sriracha: "Sriracha", cursive;
+    --fonte_eletro: "Electrolize", sans-serif;
+    --fonte_roboto: "Roboto Condensed", sans-serif;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 200px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    padding-top: 20px;
+    font-family: var(--fonte_roboto);
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0px 0px 0px 20px;
+    padding-top: 10px;
+
+}
+
+header h2 {
+    font-size: 22px;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+nav {
+    background-color: #012340;
+    height: 20px;
+    padding: 15px 10px 30px 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    text-align: center;
+    font-family: var(--fonte_roboto);
+
+}
+
+nav a {
+    background-color: #012340;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 07px;
+    border-radius: 15px;
+    transition: background-color 0.3s; 
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+background-color: var(--cor5);
+color: var(--cor3);
+}
+
+main {
+    margin: 10px 30px;
+}
+
+section {
+    border: 1px solid rgb(206, 206, 206);
+    padding: 40px 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    max-width: 1000px;
+    background-color: #02733336;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    font-family: var(--fonte-sriracha);
+    margin: 30px auto;
+   
+}
+
+.h2_titulo {
+    text-align: center;
+    margin: 25px;
+    font-family: var(--fonte_eletro);
+}
+
+.produto {
+    font-size: 18px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center;      
+    margin: 0px 0px 20px 0px;  
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px solid rgb(206, 206, 206);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    background-color: white;
+    transition: border 0.3s;
+}
+
+.produto:hover {
+    border: 1px solid var(--cor5);
+}
+
+.produto_linha {
+    display: flex;
+    gap: 0px 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto_coluna {
+    display: flex;
+    gap: 0px 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;  
+    margin-left: 10px 30px 10px 30px;
+    padding: 30px;
+    align-items: center;     
+    text-align: center;   
+}
+
+
+.botao {
+    margin-top: 5px;
+    background-color: var(--cor5);
+    color: white;
+    font-family: var(--fonte_eletro);
+    width: 150px;
+    height: 25px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    transition: background-color 0.3s; 
+    transition: color 0.3s; 
+
+}
+
+.botao:hover {
+    background-color: var(--cor4); 
+    color: var(--cor0);
+}
+
+
+.input {
+    width: 90px;
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.formulario {
+    background-color: #02733336;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario div {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.formulario label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.formulario_input1 {
+    text-align: center;
+    border-radius: 20px;
+    height: 20px;
+    width: 200px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+}
+.formulario_input2 {
+    width: 80%;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: justify;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+}
+
+.formulario section {
+    border: 1px solid rgb(151, 151, 151);
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    max-width: 1000px;
+}
+
+.formulario p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+label {
+    padding: 10px;
+}
+
+.videos {
+    display: flex;
+    gap: 20px;
+    background-color: #02733336;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 40px 40px;
+
+}
+
+.videos div {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.videos video, .videos iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover; 
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    height: 270px;
+    font-family: var(--fonte_roboto);
+}
+
+footer div {
+    align-items: center;     
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+footer h2 {
+
+    color: white;
+    font-size: 24px;
+    padding: 20px 10px 30px 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+footer p {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    padding: 10px 30px 20px 50px;
+    font-size: 18px;      
+    font-weight: bold;
+}
+
+.voltar {
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    transition: background-color 0.3s; 
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.voltar:hover {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.164);
+}
